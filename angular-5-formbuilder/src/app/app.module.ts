@@ -8,7 +8,6 @@ import { EditAppComponent } from './edit-app/edit-app.component';
 import { DndModule } from 'ngx-drag-drop';
 import { SweetAlert2Module } from '@toverux/ngx-sweetalert2';
 import { HttpClientModule } from '@angular/common/http';
-import { DisplayComponent } from './display/display.component';
 import { TableComponent } from './table/table.component';
 
 const appRoutes: Routes = [
@@ -19,7 +18,6 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     EditAppComponent,
-    DisplayComponent,
     TableComponent
   ],
   imports: [
