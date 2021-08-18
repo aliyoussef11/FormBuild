@@ -20,7 +20,7 @@ export class field{
   values?:Array<value>;
   column?:any;
   columns?:Array<value>;
-  TotalDivsNumber?:number;
+  TotalDivsNumber? : number[];
 }
 
 export class fieldTable{

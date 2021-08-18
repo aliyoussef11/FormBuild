@@ -95,7 +95,7 @@ export class EditAppComponent implements OnInit {
       "icon": "fa-table",
       "label": "Table",
       "placeholder": "Table" ,
-      "TotalDivsNumber" : this.divs.length,
+      "TotalDivsNumber" : Array.from(Array(this.divs.length).keys()),
       "columns" :[],
     },
     {
@@ -255,7 +255,7 @@ export class EditAppComponent implements OnInit {
     for (let i = 0; i < key.length ; i++) {
       let attributeKey = this.model.attributes[i];
       if(attributeKey['type'] == 'table' && attributeKey['name'] == TableName){
-        attributeKey['TotalDivsNumber'] = this.divs.length;
+        attributeKey['TotalDivsNumber'] = Array.from(Array(this.divs.length).keys());
       }
     }
 
