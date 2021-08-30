@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class SharedService {
 
-  readonly APIurl = "https://localhost:44305/api";
+  readonly APIurl = "https://localhost:44305/api/General";
 
   constructor(public http: HttpClient) { }
 

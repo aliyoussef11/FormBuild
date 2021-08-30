@@ -290,8 +290,8 @@ export class EditAppComponent implements OnInit {
     }).then((result) => {
       if (result.value) {
         var val = {
-          FormName : this.model.name,
-           JsonForm : JSON.stringify(this.model.attributes)
+          FORMNAME : this.model.name,
+          formStructure : JSON.stringify(this.model.attributes)
         };
           this.service.addForm(val).subscribe(res=>{
           alert(res.toString());
